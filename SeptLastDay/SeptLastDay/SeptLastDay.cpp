@@ -54,6 +54,7 @@
 
                         for examples
 
+                        break until 2:45 pm eastern
 
                 nano fileName
                     this will open a very easy word editor in the command line
@@ -75,6 +76,26 @@
                         again becareful with what you are removing, always know and understand what you're
                         removing
 
+
+
+            To start a local git repo you're going to want to be in the directory that project is in and then
+
+                git init
+                    this creates a local git repo, this should be done project to project, not entire drives or multiple projects at once
+                        If you accidentally do this, there is a way to fix it - but it is tedious
+
+                git status
+                    this will show you all tracked and untracked files - tracked will be commited once you do that, untracked will not
+
+                git add file/FolderName
+                    however the optional command I use the time is 
+                        git add -A
+                            this will add everything, typically not a best practice however we don't have sensitive information to worry about so it's fine
+                                
+                git commit -m "message goes here"
+                    this will create a unique tag and version of your code, so if you need to ever roll back or see the code in that version of the code you'll 
+                    be able to do that
+                    
 
 
 

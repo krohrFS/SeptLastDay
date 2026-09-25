@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\krohr\\source\\repos\\SeptLastDay\\",
+  "WorkspaceRootPath": "C:\\Users\\krohr\\sept\\SeptLastDay\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43EA68D8-A532-4AFF-9EAE-BE924DAFF054}|SeptLastDay\\SeptLastDay.vcxproj|C:\\Users\\krohr\\source\\repos\\SeptLastDay\\SeptLastDay\\SeptLastDay.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{43EA68D8-A532-4AFF-9EAE-BE924DAFF054}|SeptLastDay\\SeptLastDay.vcxproj|C:\\Users\\krohr\\sept\\SeptLastDay\\SeptLastDay\\SeptLastDay.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{43EA68D8-A532-4AFF-9EAE-BE924DAFF054}|SeptLastDay\\SeptLastDay.vcxproj|solutionrelative:SeptLastDay\\SeptLastDay.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SeptLastDay.cpp",
-              "DocumentMoniker": "C:\\Users\\krohr\\source\\repos\\SeptLastDay\\SeptLastDay\\SeptLastDay.cpp",
+              "DocumentMoniker": "C:\\Users\\krohr\\sept\\SeptLastDay\\SeptLastDay\\SeptLastDay.cpp",
               "RelativeDocumentMoniker": "SeptLastDay\\SeptLastDay.cpp",
-              "ToolTip": "C:\\Users\\krohr\\source\\repos\\SeptLastDay\\SeptLastDay\\SeptLastDay.cpp",
+              "ToolTip": "C:\\Users\\krohr\\sept\\SeptLastDay\\SeptLastDay\\SeptLastDay.cpp",
               "RelativeToolTip": "SeptLastDay\\SeptLastDay.cpp",
-              "ViewState": "AgIAADkAAAAAAAAAAAAuwE0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAkwGAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-25T17:06:41.962Z",
               "EditorCaption": ""
