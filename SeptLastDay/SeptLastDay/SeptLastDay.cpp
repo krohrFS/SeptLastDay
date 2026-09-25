@@ -1,4 +1,8 @@
 #include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+
 
 
 /*
@@ -95,6 +99,14 @@
                 git commit -m "message goes here"
                     this will create a unique tag and version of your code, so if you need to ever roll back or see the code in that version of the code you'll 
                     be able to do that
+
+                git remote add NAME pathToGithubRepo
+                    this will create a connection between local and remote repos
+                        local is the git init (so on your machine)
+                        remote is going to be github (or if you use others gitlabs, sourcetree, many others)
+
+                git push NAME master
+                    this will push your code from your machine to the github repo
                     
 
 
@@ -103,10 +115,113 @@
 
 */
 
+void WriteFile()
+{
+    // we need to crate a ofstream object and provide a file name as string
+    std::ofstream outputFile("testing.txt");
+
+    // we can check if it's open because if a file/process is being accessed by another typically it will not let us write to a file
+    if (!outputFile.is_open())
+    {
+        std::cout << "error: file could not be opened. " << std::endl;
+        
+    }
+    else
+    {
+
+        // write data to that file
+        outputFile << "Hello" << std::endl;
+        outputFile << "this is a new file" << std::endl;
+        outputFile << "That was generated programatically" << std::endl;
+
+        // close that file
+        outputFile.close();
+
+
+
+    }
+
+    // Keep in mind that this will OVERWRITE any file with the same name, so if you wanted to append or add on to the file it would be different
+
+
+}
+
+void AppendFile()
+{
+    // we're going to create ofstream object
+    std::ofstream outputFile("testing.txt", std::ios::app);
+
+    if (outputFile.is_open())
+    {
+        outputFile << "This is the new last line\n" << std::endl;
+        outputFile.close();
+    }
+
+
+}
+
+void ReadFile()
+{
+    // to read a file we need an ifstream object not an ofstream object
+    std::ifstream readFile("testing.txt");
+
+    // we can still check if it is open
+    if (!readFile.is_open())
+    {
+        std::cout << "error: file already open" << std::endl;
+    }
+    else
+    {
+
+        std::string line = "";
+
+        // now we're use to seeing getline get text from the user in the console, but we can use it for files as well
+        while (std::getline(readFile, line))
+        {
+            std::cout << line << std::endl;
+        }
+
+        // close it when we're done with it
+        readFile.close();
+    }
+}
+
 
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::string reset = "\033[0m";
+
+    std::string red = "\033[31m";
+
+    std::string green = "\033[32m";
+
+    std::string yellow = "\033[33m";
+
+    std::string blue = "\033[34m";
+
+    std::string cyan = "\033[36m";
+
+
+
+
+
+    std::cout << "We're use to seeing cout to write to the console, using the insertion operators << and same deal with cin and the >> extraction operators " << std::endl;
+
+    WriteFile();
+    AppendFile();
+    ReadFile();
+
+
+    std::cout << red << "This line is red" << reset << std::endl;
+
+    std::cout << green << "This line is green" << reset << std::endl;
+
+    std::cout << yellow << "this line is yellow" << reset << std::endl;
+    
+    std::cout << blue << "this line is blue" << reset << std::endl;
+
+    std::cout << cyan << "this line is cyan" << reset << std::endl;
+
 }
 
